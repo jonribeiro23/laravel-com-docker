@@ -1,0 +1,8 @@
+services:
+  laradocker:
+    container_name: laradocker
+    build: .
+    volumes:
+      - ./laradocker:/var/www/html
+    ports:
+      - 9000:80
